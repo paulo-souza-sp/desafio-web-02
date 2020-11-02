@@ -1,6 +1,81 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
-/* Seu código css aqui */
+body {
+  background: #ebebeb;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.titulo {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 16px 0;
+}
+
+.titulo h2 {
+  font: 23px "Roboto", sans-serif;
+  color: #666;
+  margin: 0 10px 0 0;
+}
+
+.titulo a {
+  font: 16px "Roboto", sans-sarif;
+  color: #3483fa;
+}
+.titulo:hover a {
+  color: violet;
+}
+.lista-produto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.produto {
+  background: #fff;
+  width: 250px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.produto:hover {
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  width: 250px;
+}
+
+.produto .detalhes {
+  padding: 16px;
+  border-top: 1px solid #ddd;
+}
+
+.produto .detalhes h3 {
+  font: bold 24px "roboto", sans-serif;
+  color: #333;
+}
+
+.produto .detalhes span {
+  font: bold 14px "roboto", sans-serif;
+  color: #333;
+  display: block;
+  margin: 0 0 16px 0;
+}
+
+.produto .detalhes p {
+  display: none;
+  font: 14px "roboto", sans-serif;
+  color: #666;
+}
+.produto:hover .detalhes p {
+  display: block;
+}
